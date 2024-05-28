@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAI_PHADARN", "MAI_PHADARN\MAI_PHADARN.csproj", "{0A193767-3060-4AE8-9007-1877BE2F243D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup1", "Setup1\Setup1.vdproj", "{FAF99256-F3EC-4A8A-9FBB-18AB669C609C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DefaultBuild|Any CPU = DefaultBuild|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.DefaultBuild|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.DefaultBuild|Any CPU.Build.0 = Debug|Any CPU
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A193767-3060-4AE8-9007-1877BE2F243D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF99256-F3EC-4A8A-9FBB-18AB669C609C}.Debug|Any CPU.ActiveCfg = Debug
+		{FAF99256-F3EC-4A8A-9FBB-18AB669C609C}.DefaultBuild|Any CPU.ActiveCfg = Debug
+		{FAF99256-F3EC-4A8A-9FBB-18AB669C609C}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {065E9247-2977-4053-8869-629CAFF4AF12}
+	EndGlobalSection
+EndGlobal

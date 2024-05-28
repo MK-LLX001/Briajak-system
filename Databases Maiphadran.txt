@@ -1,0 +1,84 @@
+CREATE TABLE [dbo].[Tb_maiphadarn] (
+    [mi_id]            INT            IDENTITY (1, 1) NOT NULL,
+    [mi_data]          DATE           NULL,
+    [mi_name]          NVARCHAR (200) NULL,
+    [mi_moneykip]      INT            NULL,
+    [mi_moneybat]      INT            NULL,
+    [mi_moneydola]      INT            NULL,
+    [mi_money]       NVARCHAR (10)  NULL,
+    [mi_moneyonline] NVARCHAR (10)  NULL,
+   [mi_countmai] NVARCHAR (10)  NULL,
+    PRIMARY KEY CLUSTERED ([mi_id] ASC)
+);
+*****************
+  txtShowinfo_mai.Text =(float.Parse(txtMoneykip.Text).ToString());
+
+csharp
+using System;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+
+namespace LoginSystem
+{
+    public partial class LoginForm : Form
+    {
+        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\logindatabase.mdf;Integrated Security=True;Connect Timeout=30";
+
+        public LoginForm()
+        {
+            InitializeComponent();
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            string username = UsernameTextBox.Text;
+            string password = PasswordTextBox.Text;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"SELECT * FROM student WHERE username='{username}' AND password='{password}'";
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    MessageBox.Show("Login successful!");
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!");
+                }
+            }
+        }
+
+        private void RegisterButton_Click(object sender, EventArgs e)
+        {
+            string username = RegisterUsernameTextBox.Text;
+            string password = RegisterPasswordTextBox.Text;
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = $"INSERT INTO student (username, password) VALUES ('{username}', '{password}')";
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+
+                int result = command.ExecuteNonQuery();
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Registration successful!");
+                }
+                else
+                {
+                    MessageBox.Show("Registration failed!");
+                }
+            }
+        }
+    }
+}

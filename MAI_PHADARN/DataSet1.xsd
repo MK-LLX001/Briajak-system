@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Mai" msprop:Generator_RowEvHandlerName="MaiRowChangeEventHandler" msprop:Generator_RowDeletedName="MaiRowDeleted" msprop:Generator_RowDeletingName="MaiRowDeleting" msprop:Generator_RowEvArgName="MaiRowChangeEvent" msprop:Generator_TablePropName="Mai" msprop:Generator_RowChangedName="MaiRowChanged" msprop:Generator_RowChangingName="MaiRowChanging" msprop:Generator_TableClassName="MaiDataTable" msprop:Generator_RowClassName="MaiRow" msprop:Generator_TableVarName="tableMai" msprop:Generator_UserTableName="Mai">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="mi_id" msprop:Generator_ColumnPropNameInRow="mi_id" msprop:Generator_ColumnPropNameInTable="mi_idColumn" msprop:Generator_ColumnVarNameInTable="columnmi_id" msprop:Generator_UserColumnName="mi_id" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_data" msprop:Generator_ColumnPropNameInRow="mi_data" msprop:Generator_ColumnPropNameInTable="mi_dataColumn" msprop:Generator_ColumnVarNameInTable="columnmi_data" msprop:Generator_UserColumnName="mi_data" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_name" msprop:Generator_ColumnPropNameInRow="mi_name" msprop:Generator_ColumnPropNameInTable="mi_nameColumn" msprop:Generator_ColumnVarNameInTable="columnmi_name" msprop:Generator_UserColumnName="mi_name" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_moneykip" msprop:Generator_ColumnPropNameInRow="mi_moneykip" msprop:Generator_ColumnPropNameInTable="mi_moneykipColumn" msprop:Generator_ColumnVarNameInTable="columnmi_moneykip" msprop:Generator_UserColumnName="mi_moneykip" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_moneybat" msprop:Generator_ColumnPropNameInRow="mi_moneybat" msprop:Generator_ColumnPropNameInTable="mi_moneybatColumn" msprop:Generator_ColumnVarNameInTable="columnmi_moneybat" msprop:Generator_UserColumnName="mi_moneybat" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_moneydola" msprop:Generator_ColumnPropNameInRow="mi_moneydola" msprop:Generator_ColumnPropNameInTable="mi_moneydolaColumn" msprop:Generator_ColumnVarNameInTable="columnmi_moneydola" msprop:Generator_UserColumnName="mi_moneydola" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_money" msprop:Generator_ColumnPropNameInRow="mi_money" msprop:Generator_ColumnPropNameInTable="mi_moneyColumn" msprop:Generator_ColumnVarNameInTable="columnmi_money" msprop:Generator_UserColumnName="mi_money" type="xs:string" minOccurs="0" />
+              <xs:element name="mi_countmai" msprop:Generator_ColumnPropNameInRow="mi_countmai" msprop:Generator_ColumnPropNameInTable="mi_countmaiColumn" msprop:Generator_ColumnVarNameInTable="columnmi_countmai" msprop:Generator_UserColumnName="mi_countmai" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
